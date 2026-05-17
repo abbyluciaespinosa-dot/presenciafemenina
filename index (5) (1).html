@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presencia Femenina · Monalissa Beauty School</title>
+<meta name="description" content="Workshop exclusivo de transformación femenina dictado por Elisabeth Zapata. 3 días de etiqueta, lenguaje corporal y refinamiento. Piura, Perú · Mayo y Junio 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  /* CREAM */
+  --cream: #f7ede0;
+  --cream-soft: #fbf5ea;
+  --cream-deep: #efe2cf;
+
+  /* PINK / BLUSH */
+  --blush: #f4dcd4;
+  --blush-soft: #f9e5dd;
+  --blush-deep: #ead0c6;
+  --rose: #c89490;
+  --rose-deep: #a06b66;
+
+  /* GOLD */
+  --gold: #b8924d;
+  --gold-bright: #d4a85a;
+  --gold-soft: rgba(184, 146, 77, 0.55);
+  --gold-faint: rgba(184, 146, 77, 0.18);
+
+  /* TEXT */
+  --text: #3a2820;
+  --text-soft: rgba(58, 40, 32, 0.7);
+  --text-muted: rgba(58, 40, 32, 0.5);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+html, body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; }
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 48px;
+  position: relative;
+}
+
+/* ═══════════ NAV ═══════════ */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 22px 48px;
+  background: rgba(247, 237, 224, 0);
+  transition: background 0.4s, padding 0.4s, border-color 0.4s;
+  border-bottom: 1px solid transparent;
+}
+nav.scrolled {
+  background: rgba(247, 237, 224, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 14px 48px;
+  border-bottom-color: var(--gold-faint);
+}
+.nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.nav-logo .amp {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.nav-links { display: flex; gap: 38px; list-style: none; }
+.nav-links a {
+  color: var(--text-soft);
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-cta {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 11px 22px;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+.nav-cta:hover { background: var(--gold); color: var(--cream-soft); }
+@media (max-width: 880px) {
+  .nav-links { display: none; }
+  nav, nav.scrolled { padding: 14px 24px; }
+}
+
+/* ═══════════ HERO ═══════════ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 140px 0 100px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 70% 60% at 78% 30%, rgba(200, 148, 144, 0.32) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 70% at 12% 80%, rgba(212, 168, 90, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 100% 100% at 50% 50%, var(--blush-soft) 0%, var(--cream) 65%);
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(184,146,77,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,146,77,0.05) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+}
+.hero-orn-tr {
+  position: absolute;
+  top: 86px; right: 0;
+  width: 280px; height: 280px;
+  border-left: 1px solid rgba(184,146,77,0.25);
+  border-bottom: 1px solid rgba(184,146,77,0.25);
+  pointer-events: none;
+}
+.hero-orn-bl {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 180px; height: 180px;
+  border-right: 1px solid rgba(184,146,77,0.18);
+  border-top: 1px solid rgba(184,146,77,0.18);
+  pointer-events: none;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  animation: fadeUp 1.1s ease-out 0.1s both;
+}
+.hero-eyebrow {
+  font-size: 10px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero-eyebrow::before { content: ''; width: 36px; height: 1px; background: var(--gold); }
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(58px, 9vw, 124px);
+  font-weight: 400;
+  line-height: 0.92;
+  color: var(--text);
+  letter-spacing: -2.5px;
+  margin-bottom: 8px;
+}
+.hero h1 em {
+  display: block;
+  font-style: italic;
+  color: var(--rose-deep);
+  font-weight: 500;
+  letter-spacing: -1.5px;
+}
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-soft);
+  line-height: 1.65;
+  max-width: 560px;
+  margin: 38px 0 50px;
+}
+.hero-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 28px 44px;
+  max-width: 700px;
+  margin-bottom: 56px;
+}
+.meta-item { display: flex; flex-direction: column; gap: 6px; }
+.meta-label {
+  font-size: 8px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
+.meta-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text);
+}
+.hero-actions { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
+.btn-primary {
+  background: var(--gold);
+  color: var(--cream-soft);
+  padding: 18px 38px;
+  font-size: 11px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--gold);
+  display: inline-block;
+  cursor: pointer;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--rose-deep);
+  transform: translateY(100%);
+  transition: transform 0.4s;
+}
+.btn-primary span { position: relative; z-index: 1; }
+.btn-primary:hover::before { transform: translateY(0); }
+.btn-primary:hover { border-color: var(--rose-deep); }
+.btn-ghost {
+  color: var(--text);
+  padding: 18px 0;
+  font-size: 11px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid var(--gold);
+  transition: all 0.3s;
+}
+.btn-ghost:hover { color: var(--rose-deep); border-bottom-color: var(--rose-deep); }
+.scroll-hint {
+  position: absolute;
+  bottom: 40px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  z-index: 2;
+}
+.scroll-line {
+  width: 1px; height: 50px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; transform: scaleY(0.7); transform-origin: top; }
+  50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+}
+
+/* ═══════════ SECTION SHARED ═══════════ */
+section { position: relative; padding: 130px 0; overflow: hidden; }
+.section-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  display: block;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 5.2vw, 64px);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--text);
+  margin-bottom: 30px;
+  letter-spacing: -1.2px;
+}
+.section-title em { font-style: italic; color: var(--rose-deep); font-weight: 500; }
+.section-rule {
+  width: 48px; height: 1px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  margin-bottom: 38px;
+}
+.section-intro {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-soft);
+  max-width: 680px;
+  margin-bottom: 60px;
+}
+.section-intro em { color: var(--rose-deep); font-style: italic; }
+.orn-corner {
+  position: absolute;
+  width: 120px; height: 120px;
+  pointer-events: none;
+  border-color: var(--gold-faint);
+}
+.orn-tl { top: 0; left: 0; border-top: 1px solid var(--gold-faint); border-left: 1px solid var(--gold-faint); }
+.orn-tr { top: 0; right: 0; border-top: 1px solid var(--gold-faint); border-right: 1px solid var(--gold-faint); }
+.orn-bl { bottom: 0; left: 0; border-bottom: 1px solid var(--gold-faint); border-left: 1px solid var(--gold-faint); }
+.orn-br { bottom: 0; right: 0; border-bottom: 1px solid var(--gold-faint); border-right: 1px solid var(--gold-faint); }
+
+/* ═══════════ INSTITUCIÓN ═══════════ */
+.institucion { background: var(--cream-soft); }
+.institucion::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: -10%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(200, 148, 144, 0.18) 0%, transparent 60%);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.inst-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 90px;
+  align-items: center;
+  position: relative;
+}
+.inst-emblem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border: 1px solid var(--gold-faint);
+  background:
+    radial-gradient(circle at 50% 50%, rgba(212, 168, 90, 0.12), transparent 70%),
+    radial-gradient(circle at 30% 70%, rgba(200, 148, 144, 0.22), transparent 60%),
+    var(--blush-soft);
+}
+.inst-emblem::before, .inst-emblem::after {
+  content: '';
+  position: absolute;
+  width: 28px; height: 28px;
+  border-color: var(--gold);
+}
+.inst-emblem::before { top: -1px; left: -1px; border-top: 1px solid; border-left: 1px solid; }
+.inst-emblem::after { bottom: -1px; right: -1px; border-bottom: 1px solid; border-right: 1px solid; }
+.emblem-mark { text-align: center; padding: 40px; }
+.emblem-frame {
+  font-size: 9px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+.emblem-name {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(38px, 5vw, 56px);
+  color: var(--text);
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.emblem-name span {
+  display: block;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 6px;
+  color: var(--gold);
+  margin-top: 18px;
+  font-weight: 500;
+}
+.emblem-dots { display: flex; justify-content: center; gap: 8px; margin-top: 22px; }
+.emblem-dots span {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.7;
+}
+.inst-text p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  line-height: 1.75;
+  color: var(--text-soft);
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+.inst-text p:last-child { margin-bottom: 0; }
+.inst-text strong { color: var(--rose-deep); font-weight: 500; font-style: italic; }
+.inst-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid var(--gold-faint);
+}
+.inst-feature { text-align: left; }
+.inst-feature-num {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 32px;
+  color: var(--rose-deep);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.inst-feature-label {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+@media (max-width: 880px) {
+  .inst-grid { grid-template-columns: 1fr; gap: 50px; }
+  .inst-features { grid-template-columns: 1fr; gap: 24px; }
+}
+
+/* ═══════════ EXPERIENCIA ═══════════ */
+.experiencia { background: var(--blush); }
+.experiencia::before {
+  content: '';
+  position: absolute;
+  top: -10%; right: -10%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(212, 168, 90, 0.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+.exp-header { max-width: 800px; margin-bottom: 70px; position: relative; }
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--gold-faint);
+  border: 1px solid var(--gold-faint);
+  position: relative;
+}
+.concept-pill {
+  background: var(--blush);
+  padding: 36px 24px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--text);
+  font-weight: 500;
+  transition: background 0.4s, color 0.4s;
+  cursor: default;
+  position: relative;
+}
+.concept-pill::before {
+  content: '';
+  position: absolute;
+  top: 16px; left: 50%;
+  transform: translateX(-50%);
+  width: 4px; height: 4px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+.concept-pill:hover { background: var(--blush-soft); color: var(--rose-deep); }
+@media (max-width: 768px) { .concept-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ═══════════ PROGRAMA ═══════════ */
+.programa { background: var(--cream-soft); }
+.programa::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(200, 148, 144, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+.programa::after {
+  content: '';
+  position: absolute;
+  bottom: 10%; left: -5%;
+  width: 350px; height: 350px;
+  background: radial-gradient(circle, rgba(212, 168, 90, 0.14) 0%, transparent 70%);
+  pointer-events: none;
+}
+.days-grid { display: grid; grid-template-columns: 1fr; gap: 32px; margin-top: 30px; position: relative; }
+.day-card {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(184, 146, 77, 0.25);
+  padding: 50px 56px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 48px;
+  align-items: start;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.day-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: var(--gold);
+  transform: translateX(6px);
+  box-shadow: -10px 10px 40px rgba(200, 148, 144, 0.15);
+}
+.day-marker { position: relative; }
+.day-roman {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 86px;
+  color: var(--rose-deep);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -3px;
+}
+.day-label {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 10px;
+  font-weight: 500;
+}
+.day-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 8px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+.day-content h3 em { font-style: italic; color: var(--rose-deep); }
+.day-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.day-subtitle::before { content: ''; width: 20px; height: 1px; background: var(--gold); }
+.day-modules { display: flex; flex-direction: column; gap: 14px; }
+.module-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(184,146,77,0.2);
+}
+.module-item:last-child { border-bottom: none; }
+.module-bullet {
+  width: 22px; height: 22px;
+  flex-shrink: 0;
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 11px;
+  color: var(--gold);
+  margin-top: 1px;
+}
+.module-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--text);
+  font-weight: 400;
+}
+.module-text strong { font-weight: 600; color: var(--rose-deep); font-style: italic; }
+@media (max-width: 768px) {
+  .day-card { grid-template-columns: 1fr; padding: 36px 28px; gap: 24px; }
+  .day-roman { font-size: 64px; }
+}
+
+/* ═══════════ DIRIGIDO ═══════════ */
+.dirigido { background: var(--blush); }
+.dirigido::before {
+  content: '';
+  position: absolute;
+  bottom: -20%; right: -10%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(212, 168, 90, 0.16) 0%, transparent 65%);
+  pointer-events: none;
+}
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  margin-top: 20px;
+  border-top: 1px solid var(--gold-faint);
+  border-left: 1px solid var(--gold-faint);
+  background: rgba(255,255,255,0.25);
+  position: relative;
+}
+.audience-card {
+  padding: 44px 36px;
+  border-bottom: 1px solid var(--gold-faint);
+  border-right: 1px solid var(--gold-faint);
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  transition: background 0.4s;
+}
+.audience-card:hover { background: rgba(255, 255, 255, 0.45); }
+.aud-num {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 32px;
+  color: var(--rose-deep);
+  line-height: 1;
+  font-weight: 500;
+  flex-shrink: 0;
+  min-width: 50px;
+}
+.aud-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--text);
+  font-weight: 400;
+}
+.aud-text strong { color: var(--rose-deep); font-weight: 600; font-style: italic; }
+@media (max-width: 768px) { .audience-grid { grid-template-columns: 1fr; } }
+
+/* ═══════════ POR QUÉ ═══════════ */
+.por-que { background: var(--cream); }
+.por-que::before {
+  content: '';
+  position: absolute;
+  top: 20%; right: -5%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(200, 148, 144, 0.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+.por-que::after {
+  content: '';
+  position: absolute;
+  bottom: 10%; left: -8%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(212, 168, 90, 0.14) 0%, transparent 65%);
+  pointer-events: none;
+}
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+  margin-top: 30px;
+  position: relative;
+}
+.reason-item { position: relative; padding-top: 24px; }
+.reason-item::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 32px; height: 1px;
+  background: var(--gold);
+}
+.reason-icon-wrap {
+  width: 56px; height: 56px;
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+  background: var(--cream-soft);
+}
+.reason-icon-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 1px solid var(--gold-faint);
+}
+.reason-icon {
+  width: 24px; height: 24px;
+  stroke: var(--rose-deep);
+  stroke-width: 1.4;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.reason-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 14px;
+  line-height: 1.25;
+}
+.reason-title em { font-style: italic; color: var(--rose-deep); }
+.reason-desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-soft);
+  font-weight: 400;
+}
+@media (max-width: 880px) { .reasons-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 30px; } }
+@media (max-width: 560px) { .reasons-grid { grid-template-columns: 1fr; } }
+
+/* ═══════════ MENTORA ═══════════ */
+.mentora { background: var(--blush-soft); padding: 140px 0; }
+.mentora::before {
+  content: '';
+  position: absolute;
+  top: -10%; left: -10%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(212, 168, 90, 0.16) 0%, transparent 65%);
+  pointer-events: none;
+}
+.mentora-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 90px;
+  align-items: stretch;
+  position: relative;
+}
+.mentora-photo-wrap { position: relative; }
+.mentora-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background-image: url('assets/elisabeth-zapata.png');
+  background-size: cover;
+  background-position: center top;
+  filter: contrast(1.03) saturate(1.02);
+  position: relative;
+  z-index: 2;
+}
+.mentora-photo-frame {
+  position: absolute;
+  top: 18px; left: 18px;
+  right: -18px; bottom: -18px;
+  border: 1px solid var(--gold);
+  z-index: 1;
+}
+.mentora-badge {
+  position: absolute;
+  bottom: -38px; left: -38px;
+  background: var(--cream-soft);
+  color: var(--text);
+  padding: 22px 28px;
+  z-index: 3;
+  border: 1px solid var(--gold);
+  max-width: 240px;
+  box-shadow: 8px 8px 0 0 var(--blush-deep);
+}
+.mentora-badge-label {
+  font-size: 8px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.mentora-badge-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--text);
+}
+.mentora-content { padding-left: 0; }
+.mentora-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(40px, 5.5vw, 64px);
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  line-height: 1;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+.mentora-name em { font-style: italic; color: var(--rose-deep); }
+.mentora-title-line {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--text-soft);
+  margin-bottom: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(184,146,77,0.35);
+}
+.mentora-bio {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--text-soft);
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+.mentora-bio strong { color: var(--rose-deep); font-style: italic; font-weight: 600; }
+.mentora-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 36px;
+}
+.specialty {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  padding: 8px 16px;
+  border: 1px solid var(--gold);
+  font-weight: 600;
+  background: var(--cream-soft);
+}
+.mentora-formacion {
+  margin-top: 40px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(184,146,77,0.35);
+}
+.formacion-label {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+.formacion-list { display: flex; flex-direction: column; gap: 14px; list-style: none; }
+.formacion-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: baseline;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed rgba(184,146,77,0.35);
+  font-family: 'Cormorant Garamond', serif;
+}
+.formacion-item:last-child { border-bottom: none; padding-bottom: 0; }
+.formacion-degree { font-size: 16px; color: var(--text); font-weight: 500; }
+.formacion-school {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: right;
+}
+@media (max-width: 880px) {
+  .mentora-grid { grid-template-columns: 1fr; gap: 70px; }
+  .mentora-badge { position: static; margin-top: 24px; max-width: none; box-shadow: 4px 4px 0 0 var(--blush-deep); }
+  .formacion-item { grid-template-columns: 1fr; gap: 4px; }
+  .formacion-school { text-align: left; }
+}
+
+/* ═══════════ TRANSFORMACIÓN ═══════════ */
+.transformacion {
+  background: radial-gradient(ellipse 80% 70% at 50% 50%, var(--blush-deep) 0%, var(--blush) 70%);
+  padding: 160px 0;
+}
+.transformacion::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, rgba(212, 168, 90, 0.18) 0%, transparent 60%);
+  pointer-events: none;
+}
+.transform-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.transform-eyebrow {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.transform-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 64px;
+  font-weight: 400;
+}
+.transform-text em { color: var(--rose-deep); font-style: italic; }
+.pull-quote {
+  position: relative;
+  padding: 64px 40px;
+  margin: 48px 0;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+.pull-quote::before {
+  content: '"';
+  position: absolute;
+  top: -36px; left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 110px;
+  color: var(--gold);
+  line-height: 1;
+  background: var(--blush-deep);
+  padding: 0 24px;
+  font-style: italic;
+}
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.4;
+  color: var(--text);
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+.quote-text em { color: var(--rose-deep); }
+.traits-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 38px;
+  margin-top: 64px;
+}
+.trait {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--rose-deep);
+  position: relative;
+  font-weight: 500;
+}
+.trait:not(:last-child)::after {
+  content: '·';
+  position: absolute;
+  right: -22px;
+  color: var(--gold);
+  opacity: 0.7;
+}
+
+/* ═══════════ INVERSIÓN ═══════════ */
+.inversion { background: var(--cream); padding: 140px 0; }
+.inversion::before {
+  content: '';
+  position: absolute;
+  top: 10%; right: -10%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(200, 148, 144, 0.16) 0%, transparent 65%);
+  pointer-events: none;
+}
+.editions-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin: 50px 0 60px;
+  position: relative;
+}
+.edition-card {
+  background: var(--cream-soft);
+  border: 1px solid var(--gold-faint);
+  padding: 40px 36px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.edition-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(184, 146, 77, 0.12);
+}
+.edition-card::before, .edition-card::after {
+  content: '';
+  position: absolute;
+  width: 16px; height: 16px;
+}
+.edition-card::before { top: -1px; left: -1px; border-top: 1px solid var(--gold); border-left: 1px solid var(--gold); }
+.edition-card::after { bottom: -1px; right: -1px; border-bottom: 1px solid var(--gold); border-right: 1px solid var(--gold); }
+.edition-label {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.edition-dates {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 30px;
+  color: var(--text);
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+.edition-meta {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  color: var(--text-soft);
+  padding-top: 18px;
+  border-top: 1px solid var(--gold-faint);
+}
+.edition-meta strong { color: var(--rose-deep); font-style: italic; font-weight: 600; }
+.inv-box {
+  background:
+    radial-gradient(ellipse at top, rgba(212, 168, 90, 0.1) 0%, transparent 60%),
+    var(--cream-soft);
+  border: 1px solid var(--gold);
+  padding: 60px 56px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.inv-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  width: 1px; height: 30px;
+  background: var(--gold);
+  transform: translateX(-50%);
+}
+.price-eyebrow {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.price-display {
+  font-family: 'Playfair Display', serif;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.price-curr { font-size: 24px; color: var(--gold); font-style: italic; }
+.price-amount {
+  font-size: clamp(82px, 11vw, 124px);
+  color: var(--rose-deep);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -4px;
+}
+.price-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 44px;
+}
+.includes-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 36px;
+  max-width: 580px;
+  margin: 0 auto 50px;
+  text-align: left;
+}
+.include-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: var(--text);
+  padding: 10px 0;
+  font-weight: 400;
+}
+.include-check {
+  width: 14px; height: 14px;
+  border: 1px solid var(--gold);
+  flex-shrink: 0;
+  position: relative;
+}
+.include-check::after {
+  content: '';
+  position: absolute;
+  top: 2px; left: 4px;
+  width: 4px; height: 8px;
+  border-right: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  transform: rotate(45deg);
+}
+.cta-final {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--cream-soft);
+  padding: 22px 56px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid var(--gold);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.cta-final::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--rose-deep);
+  transform: translateY(101%);
+  transition: transform 0.4s;
+}
+.cta-final span { position: relative; z-index: 1; }
+.cta-final:hover { border-color: var(--rose-deep); }
+.cta-final:hover::before { transform: translateY(0); }
+.scarcity {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold);
+  margin-top: 24px;
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .editions-row { grid-template-columns: 1fr; }
+  .includes-list { grid-template-columns: 1fr; }
+  .inv-box { padding: 44px 28px; }
+}
+
+/* ═══════════ CONTACTO ═══════════ */
+.contacto { background: var(--blush-soft); padding: 120px 0; }
+.contact-header { text-align: center; margin-bottom: 70px; }
+.contact-header .eyebrow { justify-content: center; }
+.contact-header .eyebrow::before { display: none; }
+.contact-header .section-title { margin-bottom: 18px; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--gold-faint);
+  background: var(--cream-soft);
+}
+.contact-card {
+  padding: 50px 36px;
+  text-align: center;
+  border-right: 1px solid var(--gold-faint);
+  transition: background 0.4s;
+  text-decoration: none;
+  display: block;
+  color: var(--text);
+}
+.contact-card:last-child { border-right: none; }
+.contact-card:hover { background: var(--blush-soft); }
+.contact-icon {
+  width: 38px; height: 38px;
+  margin: 0 auto 22px;
+  display: block;
+  stroke: var(--rose-deep);
+  stroke-width: 1.3;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.contact-label {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.contact-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--text);
+  font-weight: 500;
+}
+.contact-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-card { border-right: none; border-bottom: 1px solid var(--gold-faint); }
+  .contact-card:last-child { border-bottom: none; }
+}
+
+/* ═══════════ FOOTER ═══════════ */
+footer { background: var(--cream-deep); padding: 60px 0 40px; border-top: 1px solid var(--gold-faint); }
+.footer-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 40px; }
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--text);
+  letter-spacing: 0.5px;
+}
+.footer-brand span {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: var(--gold);
+  margin-top: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.footer-orn { display: flex; align-items: center; gap: 6px; }
+.footer-orn .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--gold); }
+.footer-orn .line { width: 40px; height: 1px; background: var(--gold); opacity: 0.4; }
+.footer-copy {
+  text-align: right;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+@media (max-width: 640px) {
+  .footer-inner { grid-template-columns: 1fr; text-align: center; }
+  .footer-copy { text-align: center; }
+  .footer-orn { justify-content: center; }
+}
+
+/* ═══════════ WHATSAPP FLOAT ═══════════ */
+.wa-float {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  z-index: 99;
+  width: 60px; height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35), 0 0 0 6px rgba(37, 211, 102, 0.12);
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: waBreathe 3s ease-in-out infinite;
+}
+.wa-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5), 0 0 0 8px rgba(37, 211, 102, 0.18);
+}
+.wa-float svg { width: 32px; height: 32px; fill: white; }
+@keyframes waBreathe {
+  0%, 100% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35), 0 0 0 6px rgba(37, 211, 102, 0.12); }
+  50% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45), 0 0 0 14px rgba(37, 211, 102, 0.05); }
+}
+
+/* ═══════════ ANIMATIONS ═══════════ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.9s ease-out, transform 0.9s ease-out; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 640px) {
+  .container { padding: 0 24px; }
+  section { padding: 90px 0; }
+  .hero { padding: 120px 0 80px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      Monalissa
+      <span class="amp">Beauty School</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#programa">Programa</a></li>
+      <li><a href="#mentora">Mentora</a></li>
+      <li><a href="#inversion">Inversión</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="https://luma.com/event/evt-HamGhmIsxV0NpLp" class="nav-cta">Reservar</a>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="hero">
+  <div class="hero-orn-tr"></div>
+  <div class="hero-orn-bl"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Monalissa Beauty School · Workshop Exclusivo</div>
+      <h1>
+        Presencia
+        <em>Femenina</em>
+      </h1>
+      <p class="hero-sub">
+        Una experiencia de transformación elegante para mujeres que desean elevar su imagen, su confianza y su presencia. Tres días intensivos que cambian la forma en que entras a cada sala.
+      </p>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-label">Ediciones</span>
+          <span class="meta-value">Mayo · Junio 2026</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Duración</span>
+          <span class="meta-value">3 días intensivos</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Ubicación</span>
+          <span class="meta-value">Piura, Perú</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Cupos</span>
+          <span class="meta-value">10 mujeres</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="https://luma.com/event/evt-HamGhmIsxV0NpLp" class="btn-primary"><span>Reserva tu lugar</span></a>
+        <a href="#programa" class="btn-ghost">Conoce el programa</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Descubre</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════ SOBRE LA INSTITUCIÓN ═══════════ -->
+<section class="institucion" id="institucion">
+  <div class="orn-corner orn-tl"></div>
+  <div class="orn-corner orn-br"></div>
+  <div class="container">
+    <div class="inst-grid">
+      <div class="inst-emblem reveal">
+        <div class="emblem-mark">
+          <div class="emblem-frame">— Est. Piura —</div>
+          <div class="emblem-name">
+            Monalissa
+            <span>Beauty School</span>
+          </div>
+          <div class="emblem-dots"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="inst-text reveal">
+        <span class="section-num">— 01 —</span>
+        <div class="eyebrow">Sobre la institución</div>
+        <h2 class="section-title">Una escuela donde la <em>elegancia</em> se cultiva.</h2>
+        <div class="section-rule"></div>
+        <p>
+          <strong>Monalissa Beauty School</strong> es una escuela de moda y belleza ubicada en Piura, dedicada a formar mujeres con una visión integral del refinamiento personal.
+        </p>
+        <p>
+          Ofrecemos carreras, cursos cortos y capacitaciones en moda y belleza, con un enfoque que une técnica, cultura del agrado y desarrollo personal. Creemos que la belleza verdadera nace de la confianza, la educación y la presencia consciente.
+        </p>
+        <div class="inst-features">
+          <div class="inst-feature">
+            <div class="inst-feature-num">+10</div>
+            <div class="inst-feature-label">Años formando<br>mujeres</div>
+          </div>
+          <div class="inst-feature">
+            <div class="inst-feature-num">01</div>
+            <div class="inst-feature-label">Escuela en<br>Piura, Perú</div>
+          </div>
+          <div class="inst-feature">
+            <div class="inst-feature-num">∞</div>
+            <div class="inst-feature-label">Transformaciones<br>posibles</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ LA EXPERIENCIA ═══════════ -->
+<section class="experiencia" id="experiencia">
+  <div class="container">
+    <div class="exp-header reveal">
+      <span class="section-num">— 02 —</span>
+      <div class="eyebrow">La experiencia</div>
+      <h2 class="section-title">Desbloquea tu <em>poder femenino.</em></h2>
+      <div class="section-rule"></div>
+      <p class="section-intro">
+        <em>Presencia Femenina</em> es una experiencia inmersiva diseñada para que proyectes seguridad, elegancia y magnetismo en cada espacio donde estés. No es un taller. Es una transformación que sucede desde adentro hacia afuera, con precisión, refinamiento y una profundidad que cambia todo.
+      </p>
+    </div>
+    <div class="concept-grid reveal">
+      <div class="concept-pill">Etiqueta social</div>
+      <div class="concept-pill">Lenguaje corporal</div>
+      <div class="concept-pill">Feminidad elegante</div>
+      <div class="concept-pill">Presencia ejecutiva</div>
+      <div class="concept-pill">Confianza</div>
+      <div class="concept-pill">Refinamiento</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ EL PROGRAMA ═══════════ -->
+<section class="programa" id="programa">
+  <div class="container">
+    <div class="reveal" style="max-width: 760px;">
+      <span class="section-num">— 03 —</span>
+      <div class="eyebrow">El programa</div>
+      <h2 class="section-title">Tres días hacia la <em>confianza y la presencia.</em></h2>
+      <div class="section-rule"></div>
+      <p class="section-intro">
+        Cada jornada ha sido cuidadosamente diseñada para guiarte en una transformación progresiva, profunda y duradera. Un recorrido que integra técnica, sensorialidad y autoconocimiento.
+      </p>
+    </div>
+
+    <div class="days-grid">
+
+      <div class="day-card reveal">
+        <div class="day-marker">
+          <div class="day-roman">I</div>
+          <div class="day-label">— Día Uno —</div>
+        </div>
+        <div class="day-content">
+          <h3>Dominio de la <em>etiqueta social</em></h3>
+          <div class="day-subtitle">Eleva tu presencia en cada interacción</div>
+          <div class="day-modules">
+            <div class="module-item">
+              <div class="module-bullet">i</div>
+              <div class="module-text"><strong>Clase de etiqueta social</strong> — eleva tu presencia y refina cada interacción social.</div>
+            </div>
+            <div class="module-item">
+              <div class="module-bullet">ii</div>
+              <div class="module-text"><strong>Códigos de vestimenta</strong> y eventos sociales: aprende a vestirte para cada ocasión con criterio.</div>
+            </div>
+            <div class="module-item">
+              <div class="module-bullet">iii</div>
+              <div class="module-text"><strong>Lenguaje corporal romántico</strong> — el arte de la atracción y la comunicación no verbal.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day-card reveal">
+        <div class="day-marker">
+          <div class="day-roman">II</div>
+          <div class="day-label">— Día Dos —</div>
+        </div>
+        <div class="day-content">
+          <h3>Dominando el arte de <em>caminar con tacones</em></h3>
+          <div class="day-subtitle">Postura, equilibrio y feminidad en movimiento</div>
+          <div class="day-modules">
+            <div class="module-item">
+              <div class="module-bullet">i</div>
+              <div class="module-text"><strong>Tacones 1.0</strong> — desarrolla una postura y un equilibrio real, base de toda tu presencia.</div>
+            </div>
+            <div class="module-item">
+              <div class="module-bullet">ii</div>
+              <div class="module-text"><strong>Tacones 2.0 · Business Walk</strong> — el caminar que comunica autoridad y profesionalismo.</div>
+            </div>
+            <div class="module-item">
+              <div class="module-bullet">iii</div>
+              <div class="module-text"><strong>Tacones 3.0</strong> — refina tu forma de caminar femenina y social, con gracia natural.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day-card reveal">
+        <div class="day-marker">
+          <div class="day-roman">III</div>
+          <div class="day-label">— Día Tres —</div>
+        </div>
+        <div class="day-content">
+          <h3>Programa de <em>refinamiento profesional</em></h3>
+          <div class="day-subtitle">Presencia ejecutiva y autoridad femenina</div>
+          <div class="day-modules">
+            <div class="module-item">
+              <div class="module-bullet">i</div>
+              <div class="module-text"><strong>Dominio del lenguaje corporal empresarial</strong> — postura, gestos y mirada que comunican poder.</div>
+            </div>
+            <div class="module-item">
+              <div class="module-bullet">ii</div>
+              <div class="module-text"><strong>Etiqueta empresarial</strong> — cómo dominar el profesionalismo en el lugar de trabajo.</div>
+            </div>
+            <div class="module-item">
+              <div class="module-bullet">iii</div>
+              <div class="module-text"><strong>Códigos de vestimenta empresarial</strong> y psicología del color: viste tu autoridad.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ A QUIÉN ESTÁ DIRIGIDO ═══════════ -->
+<section class="dirigido" id="dirigido">
+  <div class="orn-corner orn-tr"></div>
+  <div class="orn-corner orn-bl"></div>
+  <div class="container">
+    <div class="reveal" style="max-width: 760px;">
+      <span class="section-num">— 04 —</span>
+      <div class="eyebrow">A quién está dirigido</div>
+      <h2 class="section-title">Una experiencia <em>creada para ti.</em></h2>
+      <div class="section-rule"></div>
+      <p class="section-intro">
+        Una mentoría personalizada, diseñada para ayudar a las mujeres a interiorizar la verdadera elegancia, confianza y aplomo en todas las áreas de la vida — personal y profesional.
+      </p>
+    </div>
+
+    <div class="audience-grid">
+      <div class="audience-card reveal">
+        <div class="aud-num">i</div>
+        <div class="aud-text">Mujeres listas para dar el <strong>salto a su poder femenino</strong> y comenzar una nueva etapa.</div>
+      </div>
+      <div class="audience-card reveal">
+        <div class="aud-num">ii</div>
+        <div class="aud-text">Mujeres que desean <strong>recuperar la confianza</strong> en sí mismas y en su presencia.</div>
+      </div>
+      <div class="audience-card reveal">
+        <div class="aud-num">iii</div>
+        <div class="aud-text">Mujeres que buscan una <strong>presencia elevada en su carrera</strong> o vida personal.</div>
+      </div>
+      <div class="audience-card reveal">
+        <div class="aud-num">iv</div>
+        <div class="aud-text">Líderes que <strong>construyen marcas personales</strong> y desean proyectar autoridad con feminidad.</div>
+      </div>
+      <div class="audience-card reveal">
+        <div class="aud-num">v</div>
+        <div class="aud-text">Mujeres que desean una <strong>transformación profunda</strong> en su forma de habitar el mundo.</div>
+      </div>
+      <div class="audience-card reveal">
+        <div class="aud-num">vi</div>
+        <div class="aud-text">Mujeres en procesos de <strong>crecimiento personal</strong> que buscan herramientas prácticas y refinamiento.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ POR QUÉ INSCRIBIRTE ═══════════ -->
+<section class="por-que" id="por-que">
+  <div class="container">
+    <div class="reveal" style="max-width: 760px;">
+      <span class="section-num">— 05 —</span>
+      <div class="eyebrow">Por qué inscribirte</div>
+      <h2 class="section-title">Razones para <em>tomar la decisión.</em></h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="reasons-grid">
+      <div class="reason-item reveal">
+        <div class="reason-icon-wrap">
+          <svg class="reason-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 10v6m11-11h-6M7 12H1m16.24-7.24l-4.24 4.24m-6 6l-4.24 4.24m12.48 0l-4.24-4.24m-6-6L4.76 4.76"/></svg>
+        </div>
+        <h3 class="reason-title">Experiencia <em>íntima</em></h3>
+        <p class="reason-desc">10 participantes por edición. Un espacio cuidado, exclusivo y profundamente personal.</p>
+      </div>
+
+      <div class="reason-item reveal">
+        <div class="reason-icon-wrap">
+          <svg class="reason-icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3 class="reason-title">Mentoría <em>personalizada</em></h3>
+        <p class="reason-desc">Retroalimentación directa de Elisabeth Zapata. Cada mujer recibe atención individual y devolución honesta.</p>
+      </div>
+
+      <div class="reason-item reveal">
+        <div class="reason-icon-wrap">
+          <svg class="reason-icon" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h3 class="reason-title">Metodología <em>práctica</em></h3>
+        <p class="reason-desc">No es solo teoría. Es entrenamiento real con tacones, postura, etiqueta y comunicación en vivo.</p>
+      </div>
+
+      <div class="reason-item reveal">
+        <div class="reason-icon-wrap">
+          <svg class="reason-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3 class="reason-title">Transformación <em>integral</em></h3>
+        <p class="reason-desc">Social, profesional y personal. Tres dimensiones de tu vida, trabajadas en tres días intensivos.</p>
+      </div>
+
+      <div class="reason-item reveal">
+        <div class="reason-icon-wrap">
+          <svg class="reason-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h3 class="reason-title">Materiales <em>incluidos</em></h3>
+        <p class="reason-desc">Recursos, guías y materiales de trabajo para acompañar tu proceso durante y después del workshop.</p>
+      </div>
+
+      <div class="reason-item reveal">
+        <div class="reason-icon-wrap">
+          <svg class="reason-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="reason-title">Consultora <em>certificada</em></h3>
+        <p class="reason-desc">Aprendes de una image advisor con trayectoria comprobada en imagen estratégica y protocolo internacional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ QUIÉN IMPARTE — ELISABETH ZAPATA ═══════════ -->
+<section class="mentora" id="mentora">
+  <div class="container">
+    <div class="mentora-grid">
+      <div class="mentora-photo-wrap reveal">
+        <div class="mentora-photo-frame"></div>
+        <div class="mentora-photo"></div>
+        <div class="mentora-badge">
+          <div class="mentora-badge-label">Tu mentora</div>
+          <div class="mentora-badge-text">Consultora Certificada<br>de Imagen Personal y Profesional</div>
+        </div>
+      </div>
+
+      <div class="mentora-content reveal">
+        <span class="section-num">— 06 —</span>
+        <div class="eyebrow">Quién imparte</div>
+        <h2 class="mentora-name">Elisabeth <em>Zapata</em></h2>
+        <div class="mentora-title-line">Image advisor, formadora y ponente</div>
+
+        <p class="mentora-bio">
+          Posee una reconocida trayectoria en empresas del sector financiero y transaccional. <strong>Apasionada por la cultura del agrado</strong>, y fiel creyente de que las relaciones genuinas, la imagen, el protocolo y la excelencia son atributos fundamentales para el éxito en las relaciones sociales, diplomáticas, políticas y empresariales.
+        </p>
+        <p class="mentora-bio">
+          Ha liderado con éxito eventos corporativos en el ámbito empresarial y de responsabilidad social, y ha sido responsable de la gestión y negociación de un portafolio de entidades gubernamentales y privadas.
+        </p>
+
+        <div class="mentora-specialties">
+          <span class="specialty">Imagen Estratégica</span>
+          <span class="specialty">Protocolo de Estado</span>
+          <span class="specialty">Negociación Árabe</span>
+          <span class="specialty">Negociación China</span>
+          <span class="specialty">Liderazgo</span>
+        </div>
+
+        <div class="mentora-formacion">
+          <div class="formacion-label">Formación académica</div>
+          <ul class="formacion-list">
+            <li class="formacion-item">
+              <div class="formacion-degree">MBA en Marketing</div>
+              <div class="formacion-school">Escuela de Posgrado UPC</div>
+            </li>
+            <li class="formacion-item">
+              <div class="formacion-degree">Asesor Presidencial</div>
+              <div class="formacion-school">Goberna · Inteligencia & Estrategia</div>
+            </li>
+            <li class="formacion-item">
+              <div class="formacion-degree">Consultoría Política</div>
+              <div class="formacion-school">Goberna · Inteligencia & Estrategia</div>
+            </li>
+            <li class="formacion-item">
+              <div class="formacion-degree">Protocolo, Ceremonial y Gestión de Eventos</div>
+              <div class="formacion-school">Academia Diplomática del Perú</div>
+            </li>
+            <li class="formacion-item">
+              <div class="formacion-degree">Estrategia Empresarial y Liderazgo</div>
+              <div class="formacion-school">Universidad de Piura</div>
+            </li>
+            <li class="formacion-item">
+              <div class="formacion-degree">Negociación Avanzada</div>
+              <div class="formacion-school">Cambridge International Consulting</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ LA TRANSFORMACIÓN ═══════════ -->
+<section class="transformacion" id="transformacion">
+  <div class="container">
+    <div class="transform-inner">
+      <div class="transform-eyebrow reveal">— La transformación —</div>
+      <p class="transform-text reveal">
+        Cuando una mujer comprende el poder de su presencia, todo cambia. Su forma de entrar a una sala. De sostener la mirada. De moverse con intención. De comunicar autoridad y calidez <em>sin pronunciar una sola palabra.</em>
+      </p>
+
+      <div class="pull-quote reveal">
+        <p class="quote-text">
+          La elegancia no es una cuestión de moda<br>ni de precio. Es <em>la certeza silenciosa</em><br>de quien sabe exactamente quién es.
+        </p>
+      </div>
+
+      <div class="traits-strip reveal">
+        <span class="trait">Seguridad</span>
+        <span class="trait">Elegancia</span>
+        <span class="trait">Magnetismo</span>
+        <span class="trait">Presencia</span>
+        <span class="trait">Poder</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ INVERSIÓN ═══════════ -->
+<section class="inversion" id="inversion">
+  <div class="container">
+    <div class="reveal" style="max-width: 760px;">
+      <span class="section-num">— 07 —</span>
+      <div class="eyebrow">Inversión e inscripción</div>
+      <h2 class="section-title"><em>Dos ediciones.</em><br>Una sola decisión.</h2>
+      <div class="section-rule"></div>
+      <p class="section-intro">
+        Elige la edición que mejor se acomode a tu calendario. Cada edición tiene <em>cupos limitados a 10 mujeres</em> para preservar la intimidad de la experiencia.
+      </p>
+    </div>
+
+    <div class="editions-row">
+      <div class="edition-card reveal">
+        <div class="edition-label">— Primera edición —</div>
+        <div class="edition-dates">22, 23 y 24<br>de Mayo, 2026</div>
+        <div class="edition-meta">
+          <span><strong>Piura</strong> · Perú</span>
+          <span>10:00 a.m. — 5:00 p.m.</span>
+        </div>
+      </div>
+      <div class="edition-card reveal">
+        <div class="edition-label">— Segunda edición —</div>
+        <div class="edition-dates">12, 13 y 14<br>de Junio, 2026</div>
+        <div class="edition-meta">
+          <span><strong>Piura</strong> · Perú</span>
+          <span>10:00 a.m. — 5:00 p.m.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="inv-box reveal">
+      <div class="price-eyebrow">Inversión total</div>
+      <div class="price-display">
+        <span class="price-curr">S/.</span>
+        <span class="price-amount">350</span>
+      </div>
+      <div class="price-note">Por las tres jornadas completas</div>
+
+      <div class="includes-list">
+        <div class="include-item"><span class="include-check"></span>Experiencia privada e íntima</div>
+        <div class="include-item"><span class="include-check"></span>10 participantes por edición</div>
+        <div class="include-item"><span class="include-check"></span>Materiales y recursos incluidos</div>
+        <div class="include-item"><span class="include-check"></span>Retroalimentación personalizada</div>
+        <div class="include-item"><span class="include-check"></span>Mentoría con Elisabeth Zapata</div>
+        <div class="include-item"><span class="include-check"></span>Cupos exclusivos y limitados</div>
+      </div>
+
+      <a
+        href="https://luma.com/event/evt-HamGhmIsxV0NpLp"
+        class="cta-final luma-checkout--button"
+        data-luma-action="checkout"
+        data-luma-event-id="evt-HamGhmIsxV0NpLp"
+      >
+        <span>Reserva tu lugar</span>
+      </a>
+      <div class="scarcity">Cupos limitados · Experiencia exclusiva · Piura 2026</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACTO ═══════════ -->
+<section class="contacto" id="contacto">
+  <div class="container">
+    <div class="contact-header reveal">
+      <span class="section-num">— 08 —</span>
+      <div class="eyebrow">Contacto</div>
+      <h2 class="section-title">Conversemos sobre <em>tu presencia.</em></h2>
+      <div class="section-rule" style="margin: 0 auto 38px;"></div>
+      <p class="section-intro" style="margin: 0 auto;">
+        Escríbenos por cualquier medio. Estamos disponibles para resolver tus dudas, contarte más sobre la experiencia y acompañarte en tu inscripción.
+      </p>
+    </div>
+
+    <div class="contact-grid reveal">
+      <a href="https://wa.me/51993393673?text=Hola%2C%20quiero%20información%20sobre%20el%20workshop%20Presencia%20Femenina%20de%20Monalissa%20Beauty%20School" target="_blank" class="contact-card">
+        <svg class="contact-icon" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <div class="contact-label">WhatsApp</div>
+        <div class="contact-value">+51 993 393 673</div>
+        <div class="contact-sub">Respuesta inmediata</div>
+      </a>
+
+      <a href="https://instagram.com/maisonmonalissa" target="_blank" class="contact-card">
+        <svg class="contact-icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <div class="contact-label">Instagram</div>
+        <div class="contact-value">@maisonmonalissa</div>
+        <div class="contact-sub">Síguenos · Inspírate</div>
+      </a>
+
+      <a href="mailto:gruposensara@gmail.com" class="contact-card">
+        <svg class="contact-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <div class="contact-label">Email</div>
+        <div class="contact-value">gruposensara<br>@gmail.com</div>
+        <div class="contact-sub">Información detallada</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        Monalissa
+        <span>Beauty School</span>
+      </div>
+      <div class="footer-orn">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+      </div>
+      <div class="footer-copy">
+        Presencia Femenina · 2026<br>
+        Piura · Perú
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════ WHATSAPP FLOAT ═══════════ -->
+<a href="https://wa.me/51993393673?text=Hola%2C%20quiero%20información%20sobre%20el%20workshop%20Presencia%20Femenina%20de%20Monalissa%20Beauty%20School" target="_blank" class="wa-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 2.667c-7.36 0-13.334 5.973-13.334 13.333 0 2.347.614 4.64 1.787 6.667l-1.92 7 7.16-1.88a13.27 13.27 0 0 0 6.307 1.6h.013c7.347 0 13.32-5.973 13.32-13.333S23.347 2.667 16 2.667zm0 24.32a11.05 11.05 0 0 1-5.627-1.547l-.4-.24-4.187 1.093 1.12-4.08-.267-.413a11.04 11.04 0 0 1-1.693-5.893c0-6.107 4.973-11.08 11.08-11.08 2.96 0 5.733 1.16 7.827 3.253a10.97 10.97 0 0 1 3.24 7.827c-.013 6.107-4.987 11.08-11.093 11.08zm6.067-8.293c-.333-.167-1.973-.973-2.28-1.08-.307-.107-.533-.16-.76.16s-.867 1.08-1.067 1.307c-.187.213-.387.24-.72.08-.333-.167-1.4-.52-2.667-1.64-.987-.88-1.653-1.973-1.84-2.307-.187-.333-.027-.507.147-.68.147-.147.333-.387.493-.573.16-.187.213-.32.333-.547.107-.213.053-.4-.027-.573-.08-.16-.733-1.773-1.013-2.427-.267-.627-.533-.547-.733-.547-.187-.013-.413-.013-.627-.013s-.573.08-.867.4c-.293.32-1.133 1.107-1.133 2.707 0 1.6 1.16 3.147 1.32 3.36.16.213 2.28 3.467 5.52 4.867.773.32 1.373.52 1.84.667.773.24 1.467.213 2.027.133.613-.093 1.973-.8 2.253-1.587.28-.787.28-1.453.187-1.587-.08-.16-.293-.24-.627-.4z"/></svg>
+</a>
+
+<!-- Luma checkout integration -->
+<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) nav.classList.add('scrolled');
+  else nav.classList.remove('scrolled');
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
